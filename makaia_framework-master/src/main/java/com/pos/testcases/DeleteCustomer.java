@@ -17,8 +17,8 @@ public class DeleteCustomer extends ProjectSpecificMethods{
 		excelFileName="DeleteCustomer";
 	}
 	
-	@Test(dataProvider = "fetchData")
-	public void runLogin(String customerId,String verifyDeletePopup,String deletePopup)
+	@Test(dataProvider = "fetchData", dependsOnMethods= {"com.pos.testcases.EditCustomer.editCustomer"})
+	public void deleteCustomer(String customerId,String verifyDeletePopup,String deletePopup)
 			 {
 		new LoginPage()
 		.login()

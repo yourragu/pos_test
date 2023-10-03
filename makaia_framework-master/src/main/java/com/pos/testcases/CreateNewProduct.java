@@ -18,7 +18,7 @@ public class CreateNewProduct extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider = "fetchData")
-	public void runLogin(String productId,String productName,String productDescription
+	public void createNewProduct(String productId,String productName,String productDescription
 			,String costPrice,String sellingPrice
 			) {
 		new LoginPage()

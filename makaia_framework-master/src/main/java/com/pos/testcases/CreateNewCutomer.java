@@ -18,7 +18,7 @@ public class CreateNewCutomer extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider = "fetchData")
-	public void runLogin(String customerId,String customerName,String customerDescription
+	public void createNewCustomer(String customerId,String customerName,String customerDescription
 			,String customeAddress,String customeMobile,String emailId) {
 		new LoginPage()
 		.login()

@@ -18,7 +18,7 @@ public class DeleteProduct extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider = "fetchData")
-	public void runLogin(String productId,String deletePopup,String verifyDeletePopup)
+	public void deleteProduct(String productId,String deletePopup,String verifyDeletePopup)
 			 {
 		new LoginPage()
 		.login()

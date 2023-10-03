@@ -18,7 +18,7 @@ public class EditProduct extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider = "fetchData")
-	public void runLogin(String productId,String changeProductName,String verifyPopup
+	public void editProduct(String productId,String changeProductName,String verifyPopup
 			) {
 		new LoginPage()
 		.login()
